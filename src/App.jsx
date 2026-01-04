@@ -1,21 +1,24 @@
-import Footer from "./components/layouts/Footer";
-import Header from "./components/layouts/Header";
+import { Route, Routes } from "react-router-dom";
+import Home from "./pages/Home";
+import Shop from "./pages/Shop";
+import Product from "./pages/Product";
+import Login from "./pages/Login";
+import Register from "./pages/Register";
+import Cart from "./pages/Cart";
+import Checkout from "./pages/Checkout";
 
 function App() {
   return (
     <>
-      <Header />
-      <div className="min-h-80 flex flex-col items-center justify-center">
-        <h2 className="text-2xl font-bold">
-          Chào mừng bạn đến với chuỗi thương mại điện tử sử dụng MERN Stack
-        </h2>
-        <p className="text-sm">
-          Đây là một dự án thương mại điện tử thực tế được xây dựng trên nền
-          tảng MERN. Chúng ta sẽ phát triển toàn bộ hệ thống từng bước một bới
-          TDNDEV.
-        </p>
-      </div>
-      <Footer />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/shop" element={<Shop />} />
+        <Route path="/product" element={<Product />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
+        <Route path="/cart" element={<Cart />} />
+        <Route path="/checkout" element={<Checkout />} />
+      </Routes>
     </>
   );
 }
