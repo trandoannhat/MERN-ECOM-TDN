@@ -1,18 +1,14 @@
-import React from "react";
-import Header from "./../components/layouts/Header";
-import Footer from "./../components/layouts/Footer";
 import Hero from "./../components/Hero";
 import FeatureProducts from "../components/FeatureProducts";
 import LatestProducts from "../components/LatestProducts";
+import Layout from "../components/layouts/Layout";
 function Home() {
   return (
-    <div>
-      <Header />
+    <Layout>
       <Hero />
       <FeatureProducts />
       <LatestProducts />
-      <Footer />
-    </div>
+    </Layout>
   );
 }
 

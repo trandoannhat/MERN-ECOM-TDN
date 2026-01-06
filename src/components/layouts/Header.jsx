@@ -3,14 +3,14 @@ import { Link } from "react-router-dom";
 import { IoCartOutline } from "react-icons/io5";
 function Header() {
   return (
-    <header>
+    <header className="shadow">
       <div className="bg-green-200">
         <div className="text-sm max-w-360 mx-auto py-1 lg:px-8 px-5">
           Miễn phí giao hàng cho đơn hàng đầu tiên của bạn!
         </div>
       </div>
       <div className="max-w-360 mx-auto lg:py-6 py-3 lg:px-8 px-5 flex justify-between items-center">
-        <Link>
+        <Link to={"/"}>
           <span className="text-3xl text-green-500 font-bold">TDN</span>
           <span className="text-3xl text-slate-800 font-bold">COM</span>
         </Link>
