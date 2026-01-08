@@ -33,7 +33,10 @@ function Header() {
             </span>
             <IoCartOutline className="mt-1" />
           </Link>
-          <Link className="bg-green-400 px-5 py-2 ms-3 text-md rounded-md text-gray-800">
+          <Link
+            to={`/login`}
+            className="bg-green-400 px-5 py-2 ms-3 text-md rounded-md   text-gray-800 hover:bg-gray-900 hover:text-white"
+          >
             Đăng nhập
           </Link>
         </nav>
